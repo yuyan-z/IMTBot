@@ -1,0 +1,89 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - university_info
+  - university_location
+  - university_size
+  - university_history
+  - teacher_info
+  - campus_info
+  - recommend_major
+  - stop
+  - contact_me
+
+entities:
+  - university
+  - teacher_title
+  - PERSON
+  - domain
+  - campus
+  - phone
+  - email
+
+actions:
+  - action_teacher_info
+  - action_campus_info
+  - action_recommend_major
+  - action_major_form_submit
+  - action_contact_me
+
+forms:
+  major_form:
+    required_slots:
+      - domain
+      - campus
+
+slots:
+  domain:
+    type: text
+    influence_conversation: false
+    mappings:
+      - entity: domain
+        type: from_entity
+  campus:
+    type: text
+    influence_conversation: false
+    mappings:
+      - entity: campus
+        type: from_entity
+
+responses:
+  utter_greet:
+  - text: "Hello, what would you like to know about IMT Atlantique?"
+
+  utter_not_understand:
+  - text: "Sorry, I can't understand the question."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_university_info:
+  - text: "IMT Atlantique (École Nationale Supérieure Mines-Télécom Atlantique Bretagne-Pays) is a technological university (French grande école), which is known for its excellence in telecommunications, digital technologies, and energy systems research and education."
+
+  utter_university_size:
+  - text: "There are around 2,000 students in total, including 1,600 engineers and 300 doctoral students. "
+
+  utter_university_history:
+  - text: "IMT Atlantique was created on January 1, 2017 through the merger of the École nationale supérieure des mines de Nantes and Télécom Bretagne."
+
+  utter_university_location:
+    - text: "IMT Atlantique is located in Brest, Nantes and Rennes, France."
+
+  utter_ask_domain:
+  - text: "Which domain are you interested in?"
+
+  utter_ask_campus:
+    - text: "Which campus do you like?"
+
+  utter_ask_contact_info:
+    - text: "May I know your phone number or email address?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

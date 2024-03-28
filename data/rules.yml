@@ -1,0 +1,34 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'I can't understand' when unable to predict an action
+  steps:
+  - intent: nlu_fallback
+  - action: utter_not_understand
+
+- rule: Activate major_form when the intent recommend_major is detected
+  steps:
+    - intent: recommend_major
+    - action: major_form
+    - active_loop: major_form
+
+- rule: Submit major_form after filling the required slots
+  condition:
+    - active_loop: major_form
+  steps:
+    - action: major_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_major_form_submit

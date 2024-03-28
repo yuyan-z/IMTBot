@@ -1,0 +1,176 @@
+version: "3.1"
+
+nlu:
+
+- synonym: university
+  examples: |
+    - college
+    - school
+
+- lookup: teacher_title
+  examples: |
+    - professor
+    - prof
+    - doctor
+    - dr
+    - mr
+    - mrs
+    - ms
+
+- lookup: campus
+  examples: |
+    - brest
+    - nantes
+    - rennes
+
+- lookup: domain
+  examples: |
+    - computer science
+    - energy
+    - nuclear
+    - telecommunication
+    - networks
+    - robotics
+    - health
+    - electrical engineering
+    - industrial engineering
+    - organization
+    - environment
+    - electronics
+
+- regex: phone
+  examples: |
+    - \d{10,12}
+- regex: email
+  examples: |
+    - [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot
+    - are you a human
+    - am I talking to a bot
+    - am I talking to a human
+
+- intent: university_info
+  examples: |
+    - can you provide information about [the university](university)
+    - provide me with some information about [the college](university)
+    - give me some information about [IMT Atlantique](university)
+    - I would like to know about [the university](university)
+    - what is [IMT Atlantique](university)
+    - share some details about [the university](university)
+    - what do you know about [IMT Atlantique](university)
+    - give me an overview of [the college](university)
+    - tell me your [your university](university)
+    - tell me about [the university](university)
+    - [IMT Atlantique](university)
+    - [your university](university)
+    - about [the university](university)
+
+- intent: university_size
+  examples: |
+    - tell me the size of [the university](university)
+    - how many students are there in [your university](university)
+    - what's the total count of students enrolled at [IMT Atlantique](university)
+
+- intent: university_history
+  examples: |
+    - when was [the university](university) founded
+    - in which year [the university](university) created
+    - I'd like to know about the history of [IMT Atlantique](university)
+    - tell me about the history of [your university](university)
+
+- intent: university_location
+  examples: |
+    - where is [the university](university) located
+    - the location of [your university](university)
+    - the address of [IMT Atlantique](university)
+    - where is it situated
+
+- intent: campus_info
+  examples: |
+    - I'm interested in the [brest](campus) campus
+    - what information can you provide on [nantes](campus) campus
+    - tell me about [rennes](campus) campus
+    - what do you know about [brest](campus)
+    - provide information on the [nantes](campus) campus, please
+    - give me detail about [rennes](campus) campus
+    - tell me about [brest](campus) campus
+    - I'd like details on the [nantes](campus) campus
+    - describe the [rennes](campus) campus to me
+    - what can you tell me about the [rennes](campus) campus
+    - can you brief me on [rennes](campus) campus?
+    - share any knowledge you have on the [rennes](campus) campus
+    - can you provide an overview of the [rennes](campus) campus
+    - tell me everything about the [rennes](campus) campus
+
+- intent: teacher_info
+  examples: |
+    - is there any information available about [professor](teacher_title) [Aymane ABDALI](PERSON)
+    - can i get info about [mr](teacher_title) [Charbel](PERSON)
+    - how can i contact [dr](teacher_title) [Koffi](PERSON)
+    - what can you tell me about [mr](teacher_title) [Paul AIMÉ](PERSON)
+    - do you know [prof](teacher_title) [Erwan](PERSON)
+    - I'd like information about [mr](teacher_title) [Gabor](PERSON)
+    - how can I get in touch with [ms](teacher_title) [Antoine REBSTOCK](PERSON)
+    - do you have contact details for [professor](teacher_title) [Gilles](PERSON)
+    - how can I reach out to [professor](teacher_title) [Wided](PERSON)
+    - what's the contact information for [professor](teacher_title) [Cécile BOTHOREL](PERSON)
+    - could you provide a contact method for [professor](teacher_title) [David BOULOS](PERSON)
+    - I'd like to know more about [professor](teacher_title) [Julien](PERSON)
+    - how can I find out about [professor](teacher_title) [Sylvain](PERSON)
+    - [professor](teacher_title) [Fabien DAGNAT](PERSON)
+
+- intent: stop
+  examples: |
+    - stop
+    - stop chat
+    - I don't need it anymore
+
+- intent: recommend_major
+  examples: |
+    - I like [computer science](domain). what major should I study
+    - what major should I choose
+    - I want to know about majors
+    - I like to learn [robotics](domain) in [brest](campus)
+    - I want to go to [nantes](campus) to study [health](domain)
+    - I'm interested in [biology](domain). what major would you recommend
+    - Can you suggest a major for someone interested in [engineering](domain)
+    - I'm passionate about [artificial intelligence](domain). Which major aligns with this interest
+    - I'm planning to enroll in the [math](domain) at the [nantes](campus) campus.
+
+- intent: contact_me
+  examples: |
+    - Can someone contact me at [0766311695](phone) to provide more information
+    - Can you contact me to discuss further at [yuyan.zhao@outllook.com](email)
+    - I'd appreciate it if someone could contact me about the upcoming events
+    - Could you have someone contact me regarding my application status
+    - Please contact me for assistance. My email is [jingze.liu@gmail.com](email)
+    - Please contact me to discuss. My phone number is [0667890123](phone)
+    - Can someone contact me with more details

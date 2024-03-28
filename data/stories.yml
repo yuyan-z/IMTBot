@@ -1,0 +1,84 @@
+version: "3.1"
+
+stories:
+
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: about_university path
+  steps:
+  - intent: university_info
+  - action: utter_university_info
+
+- story: university_size path
+  steps:
+  - intent: university_size
+  - action: utter_university_size
+
+- story: university_history path
+  steps:
+  - intent: university_history
+  - action: utter_university_history
+
+- story: university_location path
+  steps:
+  - intent: university_location
+  - action: utter_university_location
+
+- story: teacher_info path
+  steps:
+    - or:
+      - intent: teacher_info
+      - intent: teacher_info
+        entities:
+          - PERSON: "Julien"
+    - action: action_teacher_info
+
+- story: campus_info path
+  steps:
+  - intent: campus_info
+    entities:
+      - campus: "brest"
+  - action: action_campus_info
+
+- story: contact_me with contact info path
+  steps:
+    - or:
+      - intent: contact_me
+        entities:
+          - phone: "0685462297"
+          - email: "toto@hotmail.com"
+      - intent: contact_me
+        entities:
+          - phone: "0685462297"
+      - intent: contact_me
+        entities:
+          - email: "toto@hotmail.com"
+    - action: action_contact_me
+
+- story: contact_me path
+  steps:
+  - intent: contact_me
+  - action: utter_ask_contact_info
+
+- story: major_form with stop
+  steps:
+    - or:
+        - intent: recommend_major
+        - intent: recommend_major
+          entities:
+            - domain: computer science
+        - intent: recommend_major
+          entities:
+            - campus: brest
+        - intent: recommend_major
+          entities:
+            - domain: computer science
+            - campus: brest
+    - action: major_form
+    - active_loop: major_form
+    - intent: stop
+    - action: action_deactivate_loop
+    - active_loop: null

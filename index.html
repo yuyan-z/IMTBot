@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Rasa</title>
+    <style>
+        /* rasa run -m models --enable-api --cors "*" */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #chatbox {
+            width: 350px;
+            height: 500px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow-y: scroll;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            word-wrap: break-word; /* 添加此属性以确保文本换行 */
+        }
+        
+        #userInput, #sendButton {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 20px;
+            outline: none;
+        }
+        #userInput {
+            width: calc(100% - 70px);
+            margin-right: 10px;
+            flex-grow: 1;
+        }
+        #sendButton {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        #sendButton:hover {
+            background-color: #0056b3;
+        }
+        .inputArea {
+            display: flex;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbox"></div>
+    <div class="inputArea">
+        <input type="text" id="userInput" placeholder="Say something..." />
+        <button id="sendButton">Send</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

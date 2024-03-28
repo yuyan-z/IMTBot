@@ -1,0 +1,298 @@
+[
+  {
+    "text": "can you provide information about the university",
+    "entities": [
+      {
+        "start": 34,
+        "end": 48,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 38,
+        "end": 48,
+        "confidence_entity": 0.9975606203079224,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "provide me with some information about the college",
+    "entities": [
+      {
+        "start": 39,
+        "end": 50,
+        "value": "the college",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 43,
+        "end": 50,
+        "confidence_entity": 0.9836235046386719,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I would like to know about the university",
+    "entities": [
+      {
+        "start": 27,
+        "end": 41,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 31,
+        "end": 41,
+        "confidence_entity": 0.9975178241729736,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "share some details about the university",
+    "entities": [
+      {
+        "start": 25,
+        "end": 39,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 29,
+        "end": 39,
+        "confidence_entity": 0.9976086616516113,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "give me an overview of the college",
+    "entities": [
+      {
+        "start": 23,
+        "end": 34,
+        "value": "the college",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.98365318775177,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "tell me your your university",
+    "entities": [
+      {
+        "start": 13,
+        "end": 28,
+        "value": "your university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.827575147151947,
+        "value": "your",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "university",
+        "start": 13,
+        "end": 28,
+        "confidence_entity": 0.8412520885467529,
+        "value": "your university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "tell me about the university",
+    "entities": [
+      {
+        "start": 14,
+        "end": 28,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 18,
+        "end": 28,
+        "confidence_entity": 0.9975735545158386,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "about the university",
+    "entities": [
+      {
+        "start": 6,
+        "end": 20,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.9976227879524231,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "tell me the size of the university",
+    "entities": [
+      {
+        "start": 20,
+        "end": 34,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 24,
+        "end": 34,
+        "confidence_entity": 0.9975963234901428,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "when was the university founded",
+    "entities": [
+      {
+        "start": 9,
+        "end": 23,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 13,
+        "end": 23,
+        "confidence_entity": 0.9968777894973755,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "in which year the university created",
+    "entities": [
+      {
+        "start": 14,
+        "end": 28,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 18,
+        "end": 28,
+        "confidence_entity": 0.9969382286071777,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "where is the university located",
+    "entities": [
+      {
+        "start": 9,
+        "end": 23,
+        "value": "the university",
+        "entity": "university"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "university",
+        "start": 13,
+        "end": 23,
+        "confidence_entity": 0.9968773126602173,
+        "value": "university",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
