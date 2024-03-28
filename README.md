@@ -10,21 +10,26 @@ The data comes from the official website of IMT Atlantique collected using a cra
 
 # Functions
 - Answer questions about basic information about the school, such as university overview, university history, university size, campus introduction.  
-  ![photo6](https://github.com/yuyan-z/IMTBot/assets/64955334/459019ad-4e9a-4123-aa39-f1c93e9f81a7)
-  
+  ![photo6](https://github.com/yuyan-z/IMTBot/assets/64955334/d53cc51f-6a8a-4d6b-9e67-0c8de094224b)
+
 - Provide the teacher profile when a user asks for teacher information by memtioning the teacher name.  
-  ![photo1](https://github.com/yuyan-z/IMTBot/assets/64955334/d86d7fca-3ed4-4804-9da5-3ce0b77075de)
+  ![photo1](https://github.com/yuyan-z/IMTBot/assets/64955334/c44fe6de-de7f-4f9f-8ee0-68f46259fae1)
+
 
 - Recommends a major based on the interested domain and prefered campus of the user.  
   If the bot hasn't collected complete information for the domain or campus fields, it should prompt the user to provide the missing information until the form is completed.  
   User can use “stop” to quit the loop.  
-  ![photo2](https://github.com/yuyan-z/IMTBot/assets/64955334/e2afc602-4813-4a5b-bdfd-de4300b33b06)
-  ![photo3](https://github.com/yuyan-z/IMTBot/assets/64955334/be57c2f5-d6eb-4242-8f8b-15ed65925c8d)
+  ![photo2](https://github.com/yuyan-z/IMTBot/assets/64955334/ea0251fc-0b6a-4247-9390-c17ac5a2d54f)
+
+  ![photo3](https://github.com/yuyan-z/IMTBot/assets/64955334/900a8d43-985e-44fc-8daf-388c380ab5c6)
+
 
 - The user requests contact and leaves phone number or email.  
   If the bot hasn't collected at least one of these information, it prompts the user to provide either a phone number or an email address.  
-  ![photo4](https://github.com/yuyan-z/IMTBot/assets/64955334/cd40dfb4-c3f3-4517-ac42-fdacb68776fb)
-  ![photo5](https://github.com/yuyan-z/IMTBot/assets/64955334/8e7ac544-c312-4670-bb56-f926d3d4d2a0)
+  ![photo4](https://github.com/yuyan-z/IMTBot/assets/64955334/5977a42e-5aa2-4600-8a1c-1a8903cf7155)
+  
+  ![photo5](https://github.com/yuyan-z/IMTBot/assets/64955334/e4346d9d-9d42-401e-8ec5-db7d6158ade2)
+
 
 # Commands
 `rasa train`: Train the model.  
